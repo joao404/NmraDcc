@@ -686,6 +686,10 @@ DCC_PROCESSOR_STATE DccProcState ;
                 #endif
                 // SET_TP2; CLR_TP2;
                 preambleBitCount = 0 ;
+                if (notifyDccDataReady)
+                {
+                    notifyDccDataReady();
+                }   
             }
             else
             {

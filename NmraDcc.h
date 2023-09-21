@@ -430,6 +430,18 @@ extern "C" {
 #endif
 
 /*+
+ *  notifyDccDataReady() Callback for a finished dcc message. Called during disabled interrupts
+ *
+ *  Inputs:
+ *    None
+ *
+ *  Returns:
+ *    None
+ */
+extern void    notifyDccDataReady (void) __attribute__ ( (weak));
+
+
+/*+
  *  notifyDccReset(uint8_t hardReset) Callback for a DCC reset command.
  *
  *  Inputs:
